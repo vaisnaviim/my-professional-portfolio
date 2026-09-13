@@ -1,0 +1,12 @@
+1. Repository URL: https://github.com/vaisnaviim/my-professional-portfolio.git
+2. Live GitHub Pages URL: https://vaisnaviim.github.io/my-professional-portfolio/
+3. Original Issue URL: https://github.com/vaisnaviim/my-professional-portfolio/issues/2#issue-5441641168
+4. Feature Branch URL: https://github.com/vaisnaviim/my-professional-portfolio/commit/9c4d61d74f3e4f3fd5ac254df33d1ebaa5a3cce9
+5. Pull Request URL: https://github.com/vaisnaviim/my-professional-portfolio/pull/3#issue-5441663661
+6. Merge Commit / Repository History URL: https://github.com/vaisnaviim/my-professional-portfolio/commit/7dd5c44b8f28523a5d164aeba8551963cd29086b
+
+7. ai-log.md URL: https://github.com/vaisnaviim/my-professional-portfolio/blob/7dd5c44b8f28523a5d164aeba8551963cd29086b/assignment-docs/ai-log.md
+8. site-testing.md URL: https://github.com/vaisnaviim/my-professional-portfolio/blob/7dd5c44b8f28523a5d164aeba8551963cd29086b/assignment-docs/site-testing.md
+9. Testing evidence URL: https://github.com/vaisnaviim/my-professional-portfolio/tree/7dd5c44b8f28523a5d164aeba8551963cd29086b/assignment-docs/site-testing-evidence
+10. human-code-review.md URL: https://github.com/vaisnaviim/my-professional-portfolio/blob/7dd5c44b8f28523a5d164aeba8551963cd29086b/assignment-docs/human-code-review.md
+11. Reflection Issue URL: https://github.com/vaisnaviim/my-professional-portfolio/issues/4#issue-5441776273
