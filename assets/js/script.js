@@ -38,10 +38,15 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
   testimonialsItem[i].addEventListener("click", function () {
 
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    const avatarIcon = this.querySelector("[data-testimonials-avatar]");
+    const fullText = this.querySelector("[data-testimonials-full]");
+
+    if (avatarIcon && avatarIcon.tagName === "ION-ICON") {
+      modalImg.setAttribute("name", avatarIcon.getAttribute("name"));
+    }
+
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    modalText.innerHTML = fullText ? fullText.innerHTML : this.querySelector("[data-testimonials-text]").innerHTML;
 
     testimonialsModalFunc();
 
@@ -61,18 +66,20 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+if (select) {
+  select.addEventListener("click", function () { elementToggleFunc(this); });
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+  // add event in all select items
+  for (let i = 0; i < selectItems.length; i++) {
+    selectItems[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
+      let selectedValue = this.innerText.toLowerCase();
+      selectValue.innerText = this.innerText;
+      elementToggleFunc(select);
+      filterFunc(selectedValue);
 
-  });
+    });
+  }
 }
 
 // filter variables
