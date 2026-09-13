@@ -38,10 +38,15 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
   testimonialsItem[i].addEventListener("click", function () {
 
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    const avatarIcon = this.querySelector("[data-testimonials-avatar]");
+    const fullText = this.querySelector("[data-testimonials-full]");
+
+    if (avatarIcon && avatarIcon.tagName === "ION-ICON") {
+      modalImg.setAttribute("name", avatarIcon.getAttribute("name"));
+    }
+
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    modalText.innerHTML = fullText ? fullText.innerHTML : this.querySelector("[data-testimonials-text]").innerHTML;
 
     testimonialsModalFunc();
 
